@@ -18,42 +18,28 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     max-width: 640px;
     margin: 50px auto;
     padding: 20px;
     background: #fff;
 }
 
-h1 {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-}
-
 .container-info {
     display: flex;
     gap: 56px;
-    margin-top: 16px;
-}
-
-.container-info h2 {
-    font-size: 1rem;
 }
 
 .container-info p {
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 1rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: 16px;
-}
-
-form label {
-    font-size: 1rem;
-    line-height: 1rem;
 }
 
 form input {
@@ -71,7 +57,6 @@ form button {
     height: 40px;
     border: none;
     background: var(--primary-color);
-    font-size: 1rem;
     font-weight: 700;
     color: #fff;
     cursor: pointer;
@@ -79,4 +64,17 @@ form button {
 
 form button:hover {
     background: var(--primary-color-darker);
+}
+
+.valid {
+    padding: 10px 20px;
+    background: #03e647;
+    font-size: 1rem;
+}
+
+.invalid {
+    padding: 10px 20px;
+    background: #e60303;
+    font-size: 1rem;
+    color: #fff;
 }
